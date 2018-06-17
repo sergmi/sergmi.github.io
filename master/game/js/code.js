@@ -78,6 +78,11 @@ function hideRulesAndInfo(){
 function subFunc(){
 	hideRulesAndInfo();
 	createGameField();
+	startCounter();
+}
+
+function startCounter(){
+	player_count = 0;
 }
 
 function createGameField(){
@@ -86,7 +91,7 @@ function createGameField(){
 	enemy_health = 99.99;
 	enemy_bar.go( 100-enemy_health ); // size enemy bar 100%
 	enemy_name.textContent = enemy_definitions.sort(() => {return Math.random()-0.5})[0]+" "+enemy_instances.sort(() => {return Math.random()-0.5})[0]+" "+enemy_names.sort(() => {return Math.random()-0.5})[0];
-	player_count = 0;
+	
 	
 	enemy_image.className = "enemy-image " + enemy_classes.sort(() => {return Math.random()-0.5})[0];
 	weapon_image.className = weapon_classes.sort(() => {return Math.random()-0.5})[0];
@@ -214,9 +219,10 @@ function applyEnemyWeapon(){
 		player_health = 0.01;
 		player_bar.go( player_health );
 		if(player_count > 0){	//  condition
-			saveCurrentScore();
-			hidePlayerImage();
+			saveCurrentScore();	
+			startCounter();
 		}
+		hidePlayerImage();
 	}
 	player_bar.go( player_health );
 }
