@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Addition and subtraction browser game</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="nanobar-master/nanobar.min.js"></script>
+	</head>
+	<body  id="bodyConteiner" class="center-content-body">
+		<section id="rulesField" class="rules">			
+				<fieldset>
+					<h1>Welcome "Addition and subtraction browser game"!</h1>
+					<legend>Rules</legend>
+					<p>Playing this game you can beat other one by solving some mathematic examples.<br/>
+						To start playing you must fill in the form your data.					
+					</p>
+				</fieldset>
+		</section>
+		<section id="formField" class="form">			
+				<fieldset>
+					<legend>Information</legend>				
+					<form action="javascript:void(null);" id="player-form">
+						<label>Firstname<input type="text" name="firstname" size="19" placeholder="your firstname *" autofocus required/></label>
+						<label>Lastname<input type="text" name="lastname" size="19" placeholder="your lastname *"/></label>						
+						<label>Age<input type="text" name="age" size="19" placeholder="your age *"/></label>							
+						<input id="formButton" type="submit" class="submit-button" value="Continue"/>
+					</form>
+				</fieldset>			
+		</section>
+		<section id="gameFinalField" class="deleted">
+			<div class="players-progress">
+				<div class="progress-conteiner">	
+					<div id="playerDiv" class="player-progress"></div>
+					<p id="playerName">player 1</p>
+				</div>	
+				<div class="progress-conteiner">	
+					<div id="enemyDiv" class="enemy-progress"></div>
+					<p id="enemyName">player 2</p>
+				</div>	
+			</div>
+			<div class="players-images">
+				<div id="playerImageConteiner" class="deleted">	
+					<div id="playerImage" class="player-image">
+						<div id="enemyInfluenceImage">							
+							
+						</div>
+					</div>
+				</div>	
+				<button id="weaponChoise" class="weapon-choise-button">
+					weapon
+				</button>
+				<div id="enemyImageConteiner" class="deleted">
+					<div id="enemyImage" class="enemy-image">
+						<div id="weaponImage">
+							<div id="playerInfluenceImage">							
+							
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<button id="exitButton" class="deleted">
+			<i class="fa fa-times fa-2x" aria-hidden="true"></i>	
+		</button>
+		<section id="modalDialogField" class="deleted">
+			<div id="modalDialogConteiner" class="overlay">
+				<button id="modalDialogCloseButton" class="modal-dialog-close-button">
+					<i class="fa fa-times" aria-hidden="true"></i>	
+				</button>
+				<div id="weapon_field" class="act-images">
+					<button class="struggle-weapon-1">	
+						
+					</button>	
+					<button class="struggle-weapon-2">	
+						
+					</button>	
+				</div>
+			</div>
+		</section>
+		<section id="taskField" class="deleted">
+			<form action="javascript:void(null);" id="player-reply">
+				<div>
+					<p id="taskConteiner"></p><label><input type="text" name="answer" size="2" placeholder="" autofocus required/></label>														
+				</div>
+				<input id="replyButton" type="submit" class="submit-reply-button" value="My answer is ready!"/>
+			</form>
+			<div id="screenKeyboard" class="screen-keyboard">
+				<div>
+					<div id="oneButton" class="screen-button">1</div>
+					<div id="twoButton" class="screen-button">2</div>
+					<div id="threeButton" class="screen-button">3</div>
+					<div id="fourButton" class="screen-button">4</div>
+					<div id="fiveButton" class="screen-button">5</div>
+					<div id="sixButton" class="screen-button">6</div>
+					<div id="sevenButton" class="screen-button">7</div>
+					<div id="eightButton" class="screen-button">8</div>
+					<div id="nineButton" class="screen-button">9</div>
+					<div id="zeroButton" class="screen-button">0</div>
+				</div>
+				<div>
+					<div id="playerFailButton" class="player-fail-button"/>I can't solve it yet  :(</div>
+					<div id="clearButton" class="screen-button clear-screen-button">clear</div>
+				</div>
+			</div>
+			<div id="messageConteiner" class="deleted">
+				<div id="correctMessage" class="deleted">Correct answer</div>
+				<div id="incorrectMessage" class="deleted">Incorrect answer</div>
+			</div>
+		</section>
+		<section id="table_field" class="deleted">
+			<fieldset id="fieldsetHighscores" class="fieldset-highscores">
+				<legend>Highscores</legend>
+				<table id="table_conteiner">
+					<thead>
+						<tr>
+							<th>firstname</th>
+							<th>lastname</th>
+							<th>age</th>
+							<th>score</th>
+						</tr>
+					</thead>
+					
+				</table>
+			</fieldset>
+		</section>
+		<section id="playButtonField" class="deleted">
+			<div>
+				Play again
+			</div>
+		</section>
+		<script src="js/code.js"></script>	
+	</body>
+</html>
