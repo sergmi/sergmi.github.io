@@ -1,0 +1,213 @@
+@font-face{
+	font-family: 'YesevaOne-Regular_v2';
+	src: url('../fonts/YesevaOne-Regular_v2.otf');
+}
+
+@font-face{
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+html{
+	height:100%;
+}
+
+body{
+	position: relative;
+	background-color: #FFF;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 0;
+	user-select: none;
+	cursor: default;
+}
+
+.header-link{
+	margin: 0;
+}
+
+header{
+	height: 700px;
+	max-height: 700px;
+	background-image: linear-gradient(to bottom, green -10%, transparent 20%), url('../img/Background.png');
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	position: relative;
+}
+
+header>div{
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.game-link{
+	width: 150px;
+	height: 30px;
+	max-width: 150px;
+	max-height: 30px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(108,213,128,0.4);
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border: 3px solid rgba(76,150,90,0.4);
+	border-radius: 5px;
+}
+
+.game-link>button{
+	background-color: rgba(255,255,255,0);
+	border: none;
+	font-size: 18px;
+	color: #FFF;
+	cursor: pointer;
+	outline: none;
+}
+
+.game-link:hover{
+	background-color: rgba(108,213,128,0.8);
+	border: 3px solid rgba(76,150,90,0.8);
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	list-style-type:none;
+	padding: 0;
+}
+
+.main-menu li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	height: 100%;
+	margin-left: 10px;
+	font-size: 21px;
+	font-family: YesevaOne-Regular_v2, Georgia, serif;
+	border: 3px solid rgba(255,255,255,0.1);
+	border-radius: 5px;
+}
+
+.main-menu a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.main-menu a:hover{
+	margin: 0;
+	color: #82C182;
+}
+
+.main-menu>li:hover{
+	border: 3px solid rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.6);
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+}
+
+main{
+	width: 100%;
+}
+
+.about p{
+	max-height: 325px;
+	overflow: hidden;
+	margin: 18px 0 50px 0;
+	font-size: 18px;
+	font-family: OpenSans-Regular, Verdana, sans-serif;
+	word-spacing: -0.05em;
+	line-height: 1.55em;
+}
+
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	max-height: 700px;
+	overflow: hidden;
+	background-image: linear-gradient(320deg, rgb(233,233,233), transparent 20%);
+	box-shadow: inset 0 0 60px rgba(0,0,0,0.1);
+}
+
+.about>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.about article{
+	text-align: center;
+}
+
+.about article>img{
+	margin: 50px 0 0 30px;
+}
+
+.about h1{
+	font-size: 32px;
+	font-family: YesevaOne-Regular_v2, Georgia, serif;
+	margin: 0;
+	color: #FFA500;
+}
+
+.screenshots{
+	width: 100%;
+	display: flex;
+}
+
+.screenshots article{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+figure{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin: 25px 0;
+}
+
+figure img{
+	order: 1;
+}
+
+figcaption{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	font-family: OpenSans-Regular, Verdana, sans-serif;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #FFA500;
+}
+
+footer{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(to top, red -10%, transparent 70%);
+}
+
+footer p{
+	font-size: 16px;
+}
