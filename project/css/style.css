@@ -57,7 +57,7 @@ body{
 	width: 200px;
 	height: 20px;
 	margin-top: 15px;
-	background-color: #fff;
+	background-color: #FFF;
 	border-radius: 3px;
 }
 
@@ -73,19 +73,19 @@ body{
 }
 
 .enemy-progress .bar {
-	background-color: #fff;
+	background-color: #FFF;
 }
 
 .player-progress{
 	height: 20px;
-	border: 1px solid black;
+	border: 1px solid #000;
 	border-radius: 3px;
 }
 
 .enemy-progress{
 	background-color: red;
 	height: 20px;
-	border: 1px solid black;
+	border: 1px solid #000;
 	border-radius: 3px;
 }
 
@@ -130,11 +130,11 @@ body{
 }
 
 .message-conteiner-visible>div{
-	color: rgb(0,255,128);
+	color: #00FF80;
 }
 
 .message-conteiner-visible>div+div{
-	color: rgb(255,62,62);
+	color: #FF3E3E;
 }
 
 @keyframes increase-opacity {
@@ -234,8 +234,8 @@ body{
 	color: white;
 	outline: none;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(98,176,255);
-	border: 3px solid rgb(0,101,202);
+	background-color: #62B0FF;
+	border: 3px solid #0065CA);
 	border-radius: 5px;
 }
 
@@ -250,8 +250,8 @@ body{
 	color: white;
 	outline: none;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(195,195,195);
-	border: 3px solid rgb(127,127,127);
+	background-color: #C3C3C3;
+	border: 3px solid #7F7F7F;
 	border-radius: 5px;
 }
 
@@ -262,7 +262,7 @@ body{
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 85, 0.2);
+	background-color: rgba(255,255,85,0.2);
 }
 
 .act-images{
@@ -276,7 +276,7 @@ body{
 	height: 100px;
 	margin: 0 10px;
 	background-image: url('../img/act_image_1.png');
-	background-color: rgb(230, 230, 230);
+	background-color: #E6E6E6;
 	background-repeat: no-repeat;
 	background-position: center;
 	outline: none;
@@ -297,7 +297,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color: rgba(255, 255, 85, 0.8);
+	background-color: rgba(255,255,85,0.8);
 	border-radius: 10px;
 	animation-name: raise-width-and-height;   
     animation-duration: 1.0s;
@@ -322,7 +322,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-color: rgba(255, 255, 85, 0.8);
+	background-color: rgba(255,255,85,0.8);
 	border-radius: 10px;
 	animation-name: reduce-width-and-height;   
     animation-duration: 1.0s;
@@ -422,9 +422,9 @@ body{
 	color: white;
 	text-align: center;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(0,255,128);
+	background-color: #00FF80;
 	outline: none;
-	border: 3px solid rgb(0,157,79);
+	border: 3px solid #009D4F;
 	border-radius: 10px;
 }
 
@@ -444,8 +444,8 @@ body{
 	color: white;
 	text-align: center;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(255,62,62);
-	border: 3px solid rgb(206,0,0);
+	background-color: #FF3E3E;
+	border: 3px solid #CE0000;
 	box-sizing: border-box;
 	border-radius: 10px;
 }
@@ -455,7 +455,7 @@ body{
 }
 
 .screen-keyboard{
-	background-color: rgb(177,191,216);
+	background-color: #B1BFD8;
 	display: flex;
 	flex-direction: column;
 	padding: 5px 25px;
@@ -476,9 +476,9 @@ body{
 	height: 50px;
 	margin: 5px;
 	font-size: 30px;
-	border: 3px solid rgb(129,150,190);
+	border: 3px solid #8196BE;
 	border-radius: 10px;
-	background-color: rgb(255,255,255);
+	background-color: #FFF;
 }
 
 .screen-button:hover,.screen-button:active{
@@ -520,7 +520,7 @@ legend{
 
 .rules p{
 	font-size: 20px;
-	color: rgb(0,217,208);
+	color: #00D9D0;
 }
 
 .form{
@@ -551,8 +551,8 @@ form>input{
 	font-size: 20px;
 	color: white;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(133,133,255);
-	border: 3px solid rgb(55,55,255);
+	background-color: #8585FF;
+	border: 3px solid #3737FF;
 	border-radius: 5px;
 }
 
@@ -616,8 +616,8 @@ tbody{
 	font-size: 25px;
 	color: white;
 	background-image: linear-gradient(to bottom, white -5%, transparent 20%);
-	background-color: rgb(98,176,255);
-	border: 3px solid rgb(0,101,202);	
+	background-color: #62B0FF;
+	border: 3px solid #0065CA;
 	border-radius: 5px;
 }
 
